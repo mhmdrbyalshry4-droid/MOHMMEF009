@@ -1,139 +1,142 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>اسمك | مطوّر برمجيات</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --bg: #eef1f6;
-    --ink: #1b2433;
-    --muted: #5b6577;
-    --accent: #2f5bea;
-    --panel: #1e2533;
-    --panel-ink: #e6ebf5;
-    --line: #cfd6e4;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    font-family: "Cairo", system-ui, sans-serif;
-    background: var(--bg);
-    color: var(--ink);
-    line-height: 1.8;
-  }
-  main { max-width: 860px; margin: 0 auto; padding: 56px 20px 80px; }
-  h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); font-weight: 800; line-height: 1.2; margin: 0 0 12px; }
-  h2 { font-size: 1.5rem; margin: 64px 0 16px; }
-  p { margin: 0 0 12px; max-width: 60ch; }
-  .muted { color: var(--muted); }
-  a { color: var(--accent); }
-  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+<div align="center">
+<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+</div>  
+  
 
-  /* Skills: click a language to see a snippet */
-  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
-  .tabs button {
-    font: 600 0.95rem "JetBrains Mono", monospace;
-    padding: 8px 16px;
-    border: 1px solid var(--line);
-    background: #fff;
-    color: var(--ink);
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .tabs button[aria-selected="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
-  pre {
-    direction: ltr;
-    text-align: left;
-    margin: 0;
-    padding: 20px;
-    background: var(--panel);
-    color: var(--panel-ink);
-    border-radius: 8px;
-    font: 400 0.95rem/1.7 "JetBrains Mono", monospace;
-    overflow-x: auto;
-    min-height: 150px;
-  }
+### <div align="center">I'm Rishav, a full-time full-stack freelance developer 👨‍💻 working remotely since 2013 🚀</div>  
+  
 
-  /* Projects */
-  .project { display: block; padding: 18px 0; border-top: 1px solid var(--line); text-decoration: none; color: inherit; }
-  .project:last-child { border-bottom: 1px solid var(--line); }
-  .project strong { color: var(--accent); font-size: 1.1rem; }
-  .project span { display: block; color: var(--muted); }
-  .project:hover strong { text-decoration: underline; }
+- 🔭 I’m currently working on [Github Profilinator](https://github.com/rishavanand/github-profilinator)  
+  
 
-  footer { margin-top: 64px; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style>
-</head>
-<body>
-<main>
-  <header>
-    <h1>أهلاً، أنا اسمك</h1>
-    <p class="muted">مطوّر برمجيات من أسيوط، مصر. بكتب كود للويب وبحل مشاكل بالبرمجة.</p>
-    <p><a href="https://github.com/USERNAME">حسابي على GitHub</a></p>
-  </header>
+- 🌱 I’m currently learning Hyperledger and Kubernetes  
+  
 
-  <section aria-labelledby="skills-title">
-    <h2 id="skills-title">المهارات</h2>
-    <p class="muted">اضغط على أي لغة عشان تشوف مثال بسيط.</p>
-    <div class="tabs" role="tablist" id="tabs"></div>
-    <pre id="code" tabindex="0" aria-live="polite"></pre>
-  </section>
+- ❓ Ask me about anything related to MERN stack and related technologies  
+  
 
-  <section aria-labelledby="projects-title">
-    <h2 id="projects-title">المشاريع</h2>
-    <a class="project" href="https://github.com/USERNAME/project-one">
-      <strong>اسم المشروع الأول</strong>
-      <span>جملة واحدة تشرح المشروع بيعمل إيه. (HTML, CSS, JavaScript)</span>
-    </a>
-    <a class="project" href="https://github.com/USERNAME/project-two">
-      <strong>اسم المشروع الثاني</strong>
-      <span>جملة واحدة تشرح المشروع بيعمل إيه. (Python)</span>
-    </a>
-    <a class="project" href="https://github.com/USERNAME/project-three">
-      <strong>اسم المشروع الثالث</strong>
-      <span>جملة واحدة تشرح المشروع بيعمل إيه. (C++)</span>
-    </a>
-  </section>
+- ⚡ Fun fact: I use tabs over spaces  
+  
 
-  <footer>
-    <h2>تواصل معايا</h2>
-    <p><a href="mailto:you@example.com">you@example.com</a></p>
-  </footer>
-</main>
+<br/>  
 
-<script>
-  const snippets = {
-    "HTML": '<button id="hi">اضغط هنا</button>\n<p id="msg"></p>',
-    "CSS": 'button {\n  background: #2f5bea;\n  color: white;\n  border-radius: 6px;\n  padding: 8px 16px;\n}',
-    "JavaScript": 'document.getElementById("hi")\n  .addEventListener("click", () => {\n    document.getElementById("msg").textContent = "أهلاً!";\n  });',
-    "Python": 'def square(n):\n    return n * n\n\nprint([square(i) for i in range(1, 6)])',
-    "C++": '#include <iostream>\n\nint main() {\n    std::cout << "Hello, World!" << std::endl;\n    return 0;\n}'
-  };
 
-  const tabs = document.getElementById("tabs");
-  const code = document.getElementById("code");
+## My Skill Set  
+<table><tr><td valign="top" width="33%">
 
-  function show(name) {
-    code.textContent = snippets[name];
-    tabs.querySelectorAll("button").forEach(b =>
-      b.setAttribute("aria-selected", b.textContent === name));
-  }
 
-  Object.keys(snippets).forEach(name => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.setAttribute("role", "tab");
-    b.textContent = name;
-    b.addEventListener("click", () => show(name));
-    tabs.appendChild(b);
-  });
 
-  show("HTML");
-</script>
-</body>
-</html>
+### Frontend  
+<div align="center">  
+<a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" /></a>  
+<a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" /></a>  
+<a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
+<a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
+<a href="https://www.electronjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/electron-original.svg" alt="Electron" height="50" /></a>  
+<a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
+<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" /></a>  
+<a href="https://www.adobe.com/in/products/illustrator.html" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/adobe_illustrator-icon.svg" alt="Illustrator" height="50" /></a>  
+<a href="https://www.chartjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/logo-title.svg" alt="Chart.js" height="50" /></a>  
+</div>
+
+</td><td valign="top" width="33%">
+
+
+
+### Backend  
+<div align="center">  
+<a href="https://www.cplusplus.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/cplusplus-original.svg" alt="C++" height="50" /></a>  
+<a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
+<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/typescript-original.svg" alt="TypeScript" height="50" /></a>  
+<a href="https://www.php.net/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" /></a>  
+<a href="https://www.mongodb.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mongodb-original-wordmark.svg" alt="MongoDB" height="50" /></a>  
+<a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" /></a>  
+<a href="https://www.linux.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" /></a>  
+<a href="https://www.nginx.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nginx-original.svg" alt="Nginx" height="50" /></a>  
+<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a>  
+<a href="https://expressjs.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/express-original-wordmark.svg" alt="Express.js" height="50" /></a>  
+<a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" /></a>  
+<a href="https://redux.js.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/redux-original.svg" alt="Redux" height="50" /></a>  
+<a href="https://www.gnu.org/software/bash/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" /></a>  
+</div>
+
+</td><td valign="top" width="33%">
+
+
+
+### DevOps  
+<div align="center">  
+<a href="https://aws.amazon.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" /></a>  
+<a href="https://cloud.google.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/google_cloud-icon.svg" alt="GCP" height="50" /></a>  
+<a href="https://kubernetes.io/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/kubernetes-icon.svg" alt="Kubernetes" height="50" /></a>  
+<a href="https://www.linux.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/linux-original.svg" alt="Linux" height="50" /></a>  
+<a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" /></a>  
+<a href="https://www.gnu.org/software/bash/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/gnu_bash-icon.svg" alt="Bash" height="50" /></a>  
+</div>
+
+</td></tr></table>  
+
+<br/>  
+
+
+## Connect with me  
+<div align="center">
+<a href="https://github.com/rishavanand" target="_blank">
+<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
+</a>
+<a href="https://twitter.com/iamrishavanand" target="_blank">
+<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
+</a>
+<a href="https://dev.to/rishavanand" target="_blank">
+<img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 5px;" />
+</a>
+<a href="https://linkedin.com/in/rishavanand" target="_blank">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+</a>
+<a href="https://www.facebook.com/iamrishavanand" target="_blank">
+<img src=https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
+</a>
+<a href="https://instagram.com/iamrishavanand" target="_blank">
+<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
+</a>  
+</div>  
+  
+
+<br/>  
+
+
+## Github Stats  
+<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=rishavanand&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
+
+<br/>  
+
+
+## Recent Blog Posts  
+<!-- BLOG-POST-LIST:START -->  
+If things goes well, this section should automatically be replaced by a list of your blog posts after you commit your readme file. 
+<!-- BLOG-POST-LIST:END -->  
+
+<br/>  
+
+<div align="center"><img src="https://rishavanand.github.io/static/images/spotify-readme-example.svg" /></div>  
+
+<br/>  
+
+<div align="center">
+<img src="https://komarev.com/ghpvc/?username=rishavanand&&style=flat-square" align="center" />
+</div>  
+  
+
+<br/>  
+
+<div align="center">
+            <a href="https://www.buymeacoffee.com/rishavanand" target="_blank" style="display: inline-block;">
+                <img
+                    src="https://img.shields.io/badge/Donate-Buy%20Me%20A%20Coffee-orange.svg?style=flat-square&logo=buymeacoffee" 
+                    align="center"
+                />
+            </a></div>
+<br />
+
+----
+<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
